@@ -26,7 +26,7 @@ interface CustomFormFieldProps {
 const RenderField = ({ field, props }: { field: any; props: CustomFormFieldProps }) => {
   const { fieldType, iconAlt, iconSrc, placeholder } = props;
 
-  switch (fieldType) {
+  switch (props.fieldType) {
     case FormFieldType.INPUT:
       return (
         <div className="flex rounded-md border border-dark-500 bg-dark-400">
@@ -57,7 +57,7 @@ const RenderField = ({ field, props }: { field: any; props: CustomFormFieldProps
 };
 
 const CustomFormField = (props: CustomFormFieldProps) => {
-  const { control, fieldType, name, label, placeholder, iconAlt, iconSrc } = props;
+  const { control, fieldType, name, label } = props;
   return (
     <div>
       <FormField
@@ -67,7 +67,6 @@ const CustomFormField = (props: CustomFormFieldProps) => {
           <FormItem className=" flex-1">
             {fieldType !== FormFieldType.CHECKBOX && label && <FormLabel>{label}</FormLabel>}
             <RenderField field={field} props={props} />
-
             <FormMessage className="shad-error" />
           </FormItem>
         )}
