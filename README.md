@@ -36,3 +36,5 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 -Link figma: https://www.figma.com/design/kWioE0fyIqd6pbWIZfOcEM/Healthcare-System?ck_subscriber_id=2799019833&node-id=2-2&t=vKONn57pd2nBAbqX-1&utm_campaign=Landing%20Page%20or%20Form%20-%206650921&utm_medium=email&utm_source=convertkit
+
+Bug: date picker, insuaranceProvider
