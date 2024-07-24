@@ -38,3 +38,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 -Link figma: https://www.figma.com/design/kWioE0fyIqd6pbWIZfOcEM/Healthcare-System?ck_subscriber_id=2799019833&node-id=2-2&t=vKONn57pd2nBAbqX-1&utm_campaign=Landing%20Page%20or%20Form%20-%206650921&utm_medium=email&utm_source=convertkit
 
 Bug: date picker, insuaranceProvider
+YRV3JUFW8MH1M7XAG62MCUAP
+
+//Viet notification neu nguoi dung dang nhap thanh cong hay that bai
+RegiterForm can phai cap nhat mot cach tu dong thong tin cua user tai nhung truong can thiet
+Truong gender can capitilize

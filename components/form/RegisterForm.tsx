@@ -55,7 +55,7 @@ const RegisterForm = ({ user }: { user: User }) => {
 
       //@ts-ignore
       const patient = await registerPatient(patientData);
-   
+
       if (patient) router.push(`/patients/${user.$id}/new-appointment`);
     } catch (error) {
       console.log(error);
@@ -94,7 +94,7 @@ const RegisterForm = ({ user }: { user: User }) => {
                   {GenderOptions.map((option, i) => (
                     <div key={option + i} className="radio-group">
                       <RadioGroupItem value={option} id={option} />
-                      <Label htmlFor={option} className="cursor-pointer">
+                      <Label htmlFor={option} className="cursor-pointer  capitalize">
                         {option}
                       </Label>
                     </div>

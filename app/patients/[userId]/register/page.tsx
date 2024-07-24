@@ -1,9 +1,11 @@
 import RegisterForm from "@/components/form/RegisterForm";
 import { getUser } from "@/lib/actions/patient.actions";
 import Image from "next/image";
+import * as Sentry from "@sentry/nextjs";
 
 const Register = async ({ params: { userId } }: SearchParamProps) => {
   const user = await getUser(userId);
+  Sentry.metrics.set("user_view_register", user.nane);
   return (
     <div className="h-screen max-h-screen flex">
       {/* Todo: verify OTP || passKey */}
