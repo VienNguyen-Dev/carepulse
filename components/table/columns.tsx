@@ -31,7 +31,7 @@ export const columns: ColumnDef<Appointment>[] = [
     header: "Status",
     cell: ({ row }) => {
       return (
-        <div className="min-w[115px]">
+        <div className="min-w-[115px]">
           <StatusBadge status={row.original.status} />
         </div>
       );

@@ -74,7 +74,7 @@ export const updateAppointment = async ({ appointmentId, userId, type, appointme
   ${
     type === "schedule"
       ? `Your appointment has been scheduled for ${formatDateTime(appointment.schedule!).dateTime} with Dr. ${appointment.primaryPhysician}`
-      : `We refret to inform you that your appointment has been cancelled. Reason: ${appointment.cancellationReason}`
+      : `We regret to inform you that your appointment has been cancelled. Reason: ${appointment.cancellationReason}`
   }`;
 
     await sendSMSNotification(userId, smsMessage);
